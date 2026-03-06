@@ -11,44 +11,44 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Lato", "Raleway", sans-serif;
-  --nav-font: "Montserrat", "Poppins",  sans-serif;
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
 }
-
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #1a1715; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #110a06; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #c85716; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #0b2341; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ed502e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.8);  /* The default color of the main navmenu links */
-  --nav-hover-color: #c85716; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #444444;  /* The default color of the main navmenu links */
+  --nav-hover-color: #ed502e; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #1a1715; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #c85716; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ed502e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #fffaf2;
+  --background-color: #f7f9fd;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #000000;
+  --background-color: #060606;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #252626;
+  --surface-color: #252525;
   --contrast-color: #ffffff;
 }
 
@@ -86,7 +86,6 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -207,7 +206,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
-.header {
+/*.header {
   --background-color: rgba(255, 255, 255, 0);
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -217,6 +216,67 @@ h6 {
   z-index: 997;
   padding: 20px 0 0 0;
 
+}*/
+.header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 15px 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+.header .logo {
+  line-height: 1;
+}
+
+.header .logo img {
+  max-height: 36px;
+  margin-right: 8px;
+}
+
+.header .logo h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.header .btn-getstarted,
+.header .btn-getstarted:focus {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 25px;
+  margin: 0 0 0 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.header .btn-getstarted:hover,
+.header .btn-getstarted:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+@media (max-width: 1200px) {
+  .header .logo {
+    order: 1;
+  }
+
+  .header .btn-getstarted {
+    order: 2;
+    margin: 0 15px 0 0;
+    padding: 6px 15px;
+  }
+
+  .header .navmenu {
+    order: 3;
+  }
+}
+
+.scrolled .header {
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
 .header .top-row {
@@ -241,7 +301,7 @@ h6 {
 }
 
 
-.header .logo {
+/*.header .logo {
   line-height: 1;
 }
 
@@ -256,7 +316,7 @@ h6 {
   font-weight: 700;
   color: var(--heading-color);
 }
-
+*/
 .header .social-links a {
   color: var(--heading-color);
   padding: 0 8px;
@@ -534,6 +594,7 @@ h6 {
     display: block;
   }
 }
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -854,15 +915,26 @@ textarea::placeholder {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
+
 #preloader {
   position: fixed;
   inset: 0;
-  z-index: 999999;
+  z-index: 9999;
   overflow: hidden;
-  background: var(--background-color);
+  background-color: var(--background-color);
   transition: all 0.6s ease-out;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+#preloader div {
+  width: 4px;
+  height: 40px;
+  background-color: var(--accent-color);
+  margin: 0 4px;
+}
 #preloader:before {
   content: "";
   position: fixed;
@@ -876,13 +948,31 @@ textarea::placeholder {
   animation: animate-preloader 1.5s linear infinite;
 }
 
+#preloader div:nth-child(1) {
+  animation: animate-preloader 1s ease-in-out -0.45s infinite;
+}
+
+#preloader div:nth-child(2) {
+  animation: animate-preloader 1s ease-in-out -0.3s infinite;
+}
+
+#preloader div:nth-child(3) {
+  animation: animate-preloader 1s ease-in-out -0.15s infinite;
+}
+
+#preloader div:nth-child(4) {
+  animation: animate-preloader 1s infinite;
+}
+
 @keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
+
+  0%,
+  100% {
+    transform: scaleY(0.3);
   }
 
-  100% {
-    transform: rotate(360deg);
+  50% {
+    transform: scaleY(1);
   }
 }
 
@@ -1060,7 +1150,37 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
+  background-color: #0A2463; /* Dark Blue background */
+  position: relative;
+  color: #FFFFFF; /* Default text color */
   padding: 0;
+}
+
+.hero h2.display-4 {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* Hero Lead Text */
+.hero p.lead {
+  color: #FFFFFF;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #D4AF37; /* Gold button */
+  border-color: #D4AF37;
+  color: #0A2463; /* Dark text on gold */
+}
+
+.btn-outline-light {
+  border-color: #D4AF37;
+  color: #D4AF37;
+}
+
+.btn-outline-light:hover {
+  background-color: #D4AF37;
+  color: #0A2463;
 }
 
 .hero .carousel {
@@ -1093,10 +1213,12 @@ section,
 
 .hero .carousel-item:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+ background: rgba(0,0,0,0.45);
   position: absolute;
   inset: 0;
   z-index: 2;
+  background: rgba(0,0,0,0.45);
+
 }
 
 .hero .carousel-item::before {
@@ -1390,6 +1512,24 @@ section,
   .about {
     padding: 60px 0;
   }
+}
+
+
+.cta-section {
+  background-color: #0A2463;
+  color: #FFFFFF;
+}
+
+.cta-section .btn-primary {
+  background-color: #D4AF37;
+  border-color: #D4AF37;
+  color: #0A2463;
+}
+
+.cta-section .btn-primary:hover {
+  background-color: #FFFFFF;
+  color: #0A2463;
+  border-color: #D4AF37;
 }
 
 /*--------------------------------------------------------------
@@ -2215,6 +2355,43 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+/* Service Icons */
+.service-item .service-icon {
+  font-size: 2.5rem; /* Make icons bigger */
+  color: #D4AF37;    /* Gold color to match theme */
+  background-color: #0A2463; /* Optional: dark blue circle behind icon */
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Makes it circular */
+  margin-bottom: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for icons */
+.service-item:hover .service-icon {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Service item text */
+.service-item h4 a {
+  color: #0A2463; /* Dark blue headings */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service-item h4 a:hover {
+  color: #D4AF37; /* Gold on hover */
+}
+
+.service-item p {
+  color: #0A2463; /* Dark blue text */
+}
+
+
 .services .services-showcase {
   margin-bottom: 6rem;
 }
@@ -2504,6 +2681,110 @@ section,
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
+/* General Pricing Section */
+.pricing.section {
+  background-color: #FFFFFF; /* Keep main background light */
+  color: #0A2463; /* Dark blue text for headings */
+}
+
+/* Section Title */
+.section-title .subtitle {
+  color: #D4AF37; /* Gold accent for subtitle */
+  font-weight: 600;
+}
+
+.section-title h2 {
+  color: #0A2463; /* Dark blue heading */
+  font-weight: 700;
+}
+
+/* Pricing Items */
+.pricing-item {
+  border: 2px solid #0A2463; /* Blue border */
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Featured Package */
+.pricing-item.featured {
+  border-color: #D4AF37; /* Gold border */
+  background-color: #0A2463; /* Dark blue background */
+  color: #FFFFFF; /* White text */
+}
+
+.pricing-item.featured h3,
+.pricing-item.featured h4,
+.pricing-item.featured p,
+.pricing-item.featured li span {
+  color: #FFFFFF;
+}
+
+.pricing-item.featured .cta-btn {
+  background-color: #D4AF37; /* Gold button */
+  border-color: #D4AF37;
+  color: #0A2463;
+}
+
+/* CTA Buttons */
+.cta-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 8px;
+  background-color: #D4AF37; /* Gold button */
+  color: #0A2463; /* Dark blue text */
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #0A2463; /* Dark blue on hover */
+  color: #D4AF37; /* Gold text */
+}
+
+/* Checkmarks and Xs */
+.pricing-item ul li i {
+  color: #D4AF37; /* Gold check icon */
+  margin-right: 8px;
+}
+
+.pricing-item ul li.na i {
+  color: #CCCCCC; /* Grey X for unavailable */
+}
+
+/* À La Carte Services */
+.p-3.border.rounded {
+  border-color: #0A2463;
+  color: #0A2463;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.p-3.border.rounded:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Schedule Button */
+.row .btn-primary {
+  background-color: #D4AF37;
+  border-color: #D4AF37;
+  color: #0A2463;
+}
+
+.row .btn-primary:hover {
+  background-color: #0A2463;
+  color: #D4AF37;
+}
+
+
 .pricing .pricing-item {
   background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
   padding: 40px 40px;
@@ -2618,6 +2899,44 @@ section,
   color: var(--contrast-color);
   border-color: var(--accent-color);
 }
+
+
+/* Featured Pricing Item Text */
+.pricing-item.featured {
+  background-color: #0A2463; /* Dark blue background */
+  color: #FFFFFF; /* White text for all child elements */
+}
+
+/* Headings */
+.pricing-item.featured h3,
+.pricing-item.featured h4,
+.pricing-item.featured p,
+.pricing-item.featured ul li span {
+  color: #FFFFFF; /* Ensure all headings, paragraphs, and list text are white */
+}
+
+/* Checkmarks & Xs */
+.pricing-item.featured ul li i.bi-check {
+  color: #D4AF37; /* Gold checkmark */
+}
+
+.pricing-item.featured ul li.na i.bi-x {
+  color: #CCCCCC; /* Grey X */
+}
+
+/* CTA Button */
+.pricing-item.featured .cta-btn {
+  background-color: #D4AF37; /* Gold button */
+  border-color: #D4AF37;
+  color: #0A2463; /* Dark text on gold */
+}
+
+.pricing-item.featured .cta-btn:hover {
+  background-color: #FFFFFF;
+  color: #0A2463;
+  border-color: #D4AF37;
+}
+
 
 @media (max-width: 992px) {
   .pricing .box {

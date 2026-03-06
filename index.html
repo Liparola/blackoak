@@ -89,52 +89,80 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+  <!-- Hero Section -->
+  <section id="hero" class="hero section dark-background">
+    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Welcome to Multi<br></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a href="#featured-services" class="btn-get-started">Get Started</a>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="assets/img/hero-carousel/hero-carousel-1.jpg" class="d-block w-100" alt="Black Oak Consultancy – Your Strategic Partner in Corporate Excellence">
+        <div class="carousel-container text-center">
+          <div class="container">
+            <h2 class="display-4 mb-3">Welcome to Black Oak Consultancy</h2>
+           
+            <p class="lead mb-4">Your Strategic Partner in Corporate Excellence<br> Streamlining Governance, Securing Growth</p>
+            <a href="#services" class="btn btn-primary btn-lg px-4">Learn More</a>
           </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
-          <div class="carousel-container">
-            <h2>At vero eos et accusamus</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-            <a href="#featured-services" class="btn-get-started">Get Started</a>
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-          <div class="carousel-container">
-            <h2>Temporibus autem quibusdam</h2>
-            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-            <a href="#featured-services" class="btn-get-started">Get Started</a>
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
-        <ol class="carousel-indicators"></ol>
-
+        </div>
       </div>
 
-    </section><!-- /Hero Section -->
-    
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="assets/img/hero-carousel/hero-carousel-2.jpg" class="d-block w-100" alt="">
+        <div class="carousel-container text-center">
+          <div class="container">
+            <p class="lead mb-4">From compliance to contracts, governance to IP — we manage complexity so you can focus on growth</p>
+            <a href="#services" class="btn btn-outline-light btn-lg px-4">Explore Our Services</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="assets/img/hero-carousel/hero-carousel-3.jpg" class="d-block w-100" alt="">
+        <div class="carousel-container text-center">
+          <div class="container">
+            <h2 class="display-4 mb-3">Why Choose Us?</h2>
+            <p class="lead mb-4">✓ Integrated, end-to-end solutions<br>
+✓ Industry expertise across sectors<br>
+✓ Technology-driven tracking & reporting<br>
+✓ Scalable support for startups to enterprises</p>
+            <a href="#services" class="btn btn-outline-light btn-lg px-4">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+  </section><!-- /Hero Section -->
+
+
+  <!-- Main Message Section -->
+  <section class="section text-center py-5">
+    <div class="container">
+      <h2 class="h3">From compliance to contracts, governance to IP</h2>
+      <p class="lead">We manage complexity so you can focus on growth.</p>
+    </div>
+  </section>
+
+  
+
+
     <!-- About Section -->
 <section id="about" class="about section">
 
@@ -800,6 +828,27 @@ Custom solution design
   </div>
 
 </section><!-- /Testimonials Section -->
+
+<!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Call To Action</h3>
+              <p>"Let’s streamline your success." <br>
+Schedule a consultation today!
+</p>
+              <a class="cta-btn" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
 
     <!-- Testimonials Section -->
 <section id="calendar" class="testimonials section light-background">
