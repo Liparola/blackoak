@@ -1,0 +1,34 @@
+import os
+import glob
+
+svg_logo = """<div id="preloader">
+  <svg class="preloader-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 455">
+    <g transform="translate(-140, 27.5)">
+      <circle class="c-outer" cx="400" cy="200" r="135" fill="none" stroke="currentColor" stroke-width="8" />
+      <circle class="c-inner" cx="400" cy="200" r="118" fill="none" stroke="currentColor" stroke-width="3" />
+      <path class="p-tree" d="M 400 90 C 420 85, 435 95, 440 105 C 455 100, 470 105, 475 120 C 490 115, 510 130, 505 155 C 525 160, 520 185, 505 195 C 515 215, 490 235, 470 220 C 465 240, 440 245, 425 230 C 415 235, 395 235, 400 220 C 395 235, 375 235, 365 230 C 350 245, 325 240, 320 220 C 300 235, 275 215, 285 195 C 270 185, 265 160, 285 155 C 280 130, 300 115, 315 120 C 320 105, 335 100, 350 105 C 365 85, 385 85, 400 90 Z" fill="currentColor" />
+      <path class="p-base" d="M 324 290 C 345 285, 360 270, 370 255 C 370 240, 360 235, 345 225 C 360 220, 375 225, 390 235 C 400 240, 400 240, 405 235 C 420 225, 435 220, 450 225 C 435 235, 425 240, 425 255 C 435 270, 450 285, 476 290 C 450 295, 420 300, 400 300 C 380 300, 350 295, 324 290 Z" fill="currentColor" />
+      <path class="p-root" d="M 476 290 A 118 118 0 0 1 324 290 L 400 305 Z" fill="currentColor" />
+    </g>
+    <g class="text-group">
+      <text x="440" y="215" class="title">BLACK OAK</text>
+      <text x="445" y="275" class="subtitle">CONSULTANCY</text>
+    </g>
+  </svg>
+</div>"""
+
+def process_file(filepath):
+    with open(filepath, 'r') as f:
+        content = f.read()
+    
+    if '<div id="preloader"></div>' in content:
+        content = content.replace('<div id="preloader"></div>', svg_logo)
+        with open(filepath, 'w') as f:
+            f.write(content)
+        print(f"Updated {filepath}")
+    else:
+        print(f"Preloader not found in {filepath} (might already be updated)")
+
+files = glob.glob('*.html') + glob.glob('public/*.html')
+for file in files:
+    process_file(file)
