@@ -1,0 +1,75 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  content: ["./index.html", "./public/**/*.html", "./blackoak-main.ts"],
+
+  theme: {
+    extend: {
+      colors: {
+              "on-secondary-fixed": "#281903",
+              "background": "#131313",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed": "#e3e2e2",
+              "tertiary": "#cfcece",
+              "on-secondary": "#3f2d15",
+              "inverse-on-surface": "#313030",
+              "surface-container-lowest": "#0e0e0e",
+              "secondary-fixed-dim": "#dfc29f",
+              "surface-container-low": "#1c1b1b",
+              "on-primary-fixed-variant": "#574500",
+              "outline-variant": "#4d4635",
+              "on-primary-container": "#554300",
+              "surface-bright": "#393939",
+              "surface-tint": "#e9c349",
+              "on-tertiary-fixed": "#1a1c1c",
+              "surface-dim": "#131313",
+              "on-background": "#e5e2e1",
+              "on-primary-fixed": "#241a00",
+              "primary-fixed-dim": "#e9c349",
+              "primary-fixed": "#ffe088",
+              "on-error": "#690005",
+              "secondary-fixed": "#fcdeba",
+              "surface": "#131313",
+              "inverse-primary": "#735c00",
+              "surface-variant": "#353534",
+              "secondary-container": "#5a452b",
+              "surface-container-highest": "#353534",
+              "on-tertiary-container": "#444546",
+              "outline": "#99907c",
+              "tertiary-fixed-dim": "#c6c6c6",
+              "on-tertiary-fixed-variant": "#464747",
+              "primary-container": "#d4af37",
+              "surface-container": "#201f1f",
+              "on-secondary-container": "#d0b492",
+              "primary": "#f2ca50",
+              "error-container": "#93000a",
+              "surface-container-high": "#2a2a2a",
+              "on-surface": "#e5e2e1",
+              "on-tertiary": "#2f3131",
+              "on-secondary-fixed-variant": "#574329",
+              "on-primary": "#3c2f00",
+              "tertiary-container": "#b3b3b3",
+              "secondary": "#dfc29f",
+              "on-surface-variant": "#d0c5af",
+              "inverse-surface": "#e5e2e1",
+              "error": "#ffb4ab"
+            },
+            fontFamily: {
+  "headline": ["Newsreader", "serif"],
+  "body": ["Manrope", "sans-serif"],
+  "label": ["Manrope", "sans-serif"]
+},
+           borderRadius: {
+  "DEFAULT": "0.125rem",
+  "lg": "0.25rem", 
+  "xl": "0.5rem",
+  "full": "0.75rem",
+  "2xl": "1rem",
+  "3xl": "1.5rem"
+},
+          
+    },
+  },
+  plugins: [],
+}
+
