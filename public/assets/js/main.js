@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 
+=======
+/**
+* Template Name: LeadPage
+* Template URL: https://bootstrapmade.com/leadpage-bootstrap-landing-page-template/
+* Updated: Aug 12 2025 with Bootstrap v5.3.7
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
 
 (function() {
   "use strict";

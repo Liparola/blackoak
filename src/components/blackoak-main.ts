@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
+<<<<<<< HEAD
 // @ts-ignore
 import PureCounter from '@srexi/purecounterjs';
 
@@ -349,6 +350,18 @@ export class BlackoakMain extends LitElement {
 
   
 <main class="main pt-24 pb-32 bg-background text-on-surface">
+=======
+@customElement('blackoak-main')
+export class BlackoakMain extends LitElement {
+  // We disable shadow DOM so it inherits global CSS cleanly
+  createRenderRoot() {
+    return this;
+  }
+
+  render() {
+    return html`
+<main class="main">
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
@@ -358,17 +371,28 @@ export class BlackoakMain extends LitElement {
         <div class="carousel-item active">
           <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
           <div class="carousel-container">
+<<<<<<< HEAD
             <h2>Welcome to Black Oak Consultancy</h2>
             <p>Your Strategic Partner in Corporate Excellence<br>Streamlining Governance, Securing Growth</p>
             <a href="#services" class="btn btn-light btn-lg px-4">Learn More</a>
+=======
+            <h2>Welcome to Black Oak Consultancy<br></h2>
+            <p class="lead mb-4 text-white">Your Strategic Partner in Corporate Excellence<br>Streamlining Governance, Securing Growth</p>
+      <a href="#services" class="btn btn-primary btn-lg px-4">Learn More</a>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
           <div class="carousel-container">
+<<<<<<< HEAD
             
             <p>From compliance to contracts, governance to IP — we manage complexity so you can focus on growth</p>
+=======
+            <h2 class="display-4 mb-3">Why Choose Us?</h2>
+            <p class="lead mb-4">From compliance to contracts, governance to IP — we manage complexity so you can focus on growth</p>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
             <a href="#services" class="btn btn-outline-light btn-lg px-4">Explore Our Services</a>
           </div>
         </div><!-- End Carousel Item -->
@@ -376,16 +400,22 @@ export class BlackoakMain extends LitElement {
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
           <div class="carousel-container">
+<<<<<<< HEAD
             <h2>Why Choose Us?</h2>
             <p>✓ Integrated, end-to-end solutions<br>
         ✓ Industry expertise across sectors<br>
         ✓ Technology-driven tracking & reporting<br>
         ✓ Scalable support for startups to enterprises
 </p>
+=======
+            <h2>Temporibus autem quibusdam</h2>
+            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
             <a href="#featured-services" class="btn-get-started">Get Started</a>
           </div>
         </div><!-- End Carousel Item -->
 
+<<<<<<< HEAD
         <!-- Controls -->
       <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -404,6 +434,21 @@ export class BlackoakMain extends LitElement {
       </div>
     </div>
   </section><!-- /Hero Section -->
+=======
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
     
     <!-- About Section -->
 <section id="about" class="about section">
@@ -423,19 +468,30 @@ export class BlackoakMain extends LitElement {
         <div class="content">
           <p class="lead">At Black Oak Consultancy we provide comprehensive corporate solutions that blend legal precision with strategic insight. We help businesses navigate regulatory landscapes, protect intellectual assets, and establish robust governance frameworks.</p>
           
+<<<<<<< HEAD
       
             <div class="stats-wrapper mt-4">
+=======
+          <div class="stats-wrapper mt-4">
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
             <div class="stat-item d-flex flex-column align-items-center text-center mb-4">
               <span class="number purecounter h2 mb-1 fw-bold" data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="2">0</span>
               <span class="label fw-semibold text-muted">Years of Experience</span>
             </div>
             
+<<<<<<< HEAD
             <div class="stat-item text-center">
               <span class="number h4 fw-bold text-primary mb-2 d-block">120</span>
               <span class="label fw-semibold text-muted d-block">Clients Served</span>
               
             </div>
 
+=======
+            <div class="stat-item d-flex flex-column align-items-center text-center mb-4">
+              <span class="number purecounter h2 mb-1 fw-bold" data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="2">0</span>
+              <span class="label fw-semibold text-muted">Clients Served</span>
+            </div>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
             
             <div class="stat-item text-center">
               <span class="number h4 fw-bold text-primary mb-2 d-block">4</span>
@@ -543,7 +599,11 @@ export class BlackoakMain extends LitElement {
     <p>Corporate Solutions for Modern Businesses</p>
   </div><!-- End Section Title -->
 
+<<<<<<< HEAD
    <div class="container" data-aos="fade-up" data-aos-delay="100">
+=======
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
     <div class="services-showcase mt-5">
       <div class="row">
         <!-- LEFT COLUMN - 3 Services -->
@@ -551,7 +611,11 @@ export class BlackoakMain extends LitElement {
           <div class="services-list">
             <div class="service-item" data-aos="fade-left" data-aos-delay="100">
               <div class="service-icon">
+<<<<<<< HEAD
                 <i class="bi bi-shield-check"></i>
+=======
+                <i class="bi bi-palette"></i>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
               </div>
               <div class="service-content">
                 <h4><a href="service-details.html">COMPLIANCE MANAGEMENT</a></h4>
@@ -566,7 +630,11 @@ Policy development
 
             <div class="service-item" data-aos="fade-left" data-aos-delay="200">
               <div class="service-icon">
+<<<<<<< HEAD
                 <i class="bi bi-file-earmark-text"></i>
+=======
+                <i class="bi bi-code-slash"></i>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
               </div>
               <div class="service-content">
                 <h4><a href="service-details.html">CORPORATE SECRETARIAL SERVICES</a></h4>
@@ -581,7 +649,11 @@ Shareholder management
 
             <div class="service-item" data-aos="fade-left" data-aos-delay="300">
               <div class="service-icon">
+<<<<<<< HEAD
                 <i class="bi bi-people-fill"></i>
+=======
+                <i class="bi bi-graph-up-arrow"></i>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
               </div>
               <div class="service-content">
                 <h4><a href="service-details.html">CORPORATE GOVERNANCE</a></h4>
@@ -601,7 +673,11 @@ Stakeholder communication
           <div class="services-list">
             <div class="service-item" data-aos="fade-left" data-aos-delay="100">
               <div class="service-icon">
+<<<<<<< HEAD
                 <i class="bi bi-lightbulb"></i>
+=======
+                <i class="bi bi-palette"></i>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
               </div>
               <div class="service-content">
                 <h4><a href="service-details.html">INTELLECTUAL PROPERTY MANAGEMENT</a></h4>
@@ -616,7 +692,11 @@ IP enforcement support
 
             <div class="service-item" data-aos="fade-left" data-aos-delay="200">
               <div class="service-icon">
+<<<<<<< HEAD
                 <i class="bi bi-file-text"></i>
+=======
+                <i class="bi bi-code-slash"></i>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
               </div>
               <div class="service-content">
                 <h4><a href="service-details.html">CONTRACTS MANAGEMENT</a></h4>
@@ -632,7 +712,11 @@ Template creation
 
             <div class="service-item" data-aos="fade-left" data-aos-delay="300">
               <div class="service-icon">
+<<<<<<< HEAD
                 <i class="bi bi-briefcase"></i>
+=======
+                <i class="bi bi-graph-up-arrow"></i>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
               </div>
               <div class="service-content">
                 <h4><a href="service-details.html">CONSULTANCY SERVICES</a></h4>
@@ -1071,6 +1155,7 @@ Custom solution design
 
 </section><!-- /Testimonials Section -->
 
+<<<<<<< HEAD
 <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
@@ -1144,6 +1229,16 @@ Schedule a consultation today!
   <div class="container section-title" data-aos="fade-up">
     <span class="subtitle">Calendar</span>
     <h2>Social Media Calendar</h2>
+=======
+    <!-- Testimonials Section -->
+<section id="calendar" class="testimonials section light-background">
+
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Social Media Calendar</h2>
+    <div><span>Weekly Content</span> <span class="description-title">Schedule</span></div>
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1429,10 +1524,16 @@ Schedule a consultation today!
       </div>
     </section><!-- /Contact Section -->
 
+<<<<<<< HEAD
 
         
   </main>
     `;
   }
 
+=======
+  </main>
+    `;
+  }
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
 }

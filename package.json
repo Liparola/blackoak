@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@srexi/purecounterjs": "^1.5.0",
     "lit": "^3.1.2"
   },
@@ -16,6 +17,11 @@
     "autoprefixer": "^10.4.27",
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.2",
+=======
+    "lit": "^3.1.2"
+  },
+  "devDependencies": {
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
   }

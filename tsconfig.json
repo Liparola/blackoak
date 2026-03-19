@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "typeRoots": ["./node_modules/@types", "./types"],
+=======
+>>>>>>> 77c7940670cf908e0a98b58e6884360ce230b1d4
     "target": "es2020",
     "module": "esnext",
     "moduleResolution": "bundler",
