@@ -358,6 +358,14 @@ export class BlackoakMain extends LitElement {
     return this;
   }
 
+  toggleFaq(e: Event) {
+    const target = e.currentTarget as HTMLElement;
+    const faqItem = target.closest('.faq-item');
+    if (faqItem) {
+      faqItem.classList.toggle('faq-active');
+    }
+  }
+
   render() {
     return html`
 <main class="main">
@@ -929,7 +937,7 @@ Custom solution design
 
           <!-- PROCESS QUESTIONS -->
           <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="150">
-            <div class="faq-header">
+            <div class="faq-header" @click=${this.toggleFaq}>
               <span class="faq-number">01</span>
               <h4>How long does onboarding take?</h4>
               <div class="faq-toggle">
@@ -945,7 +953,7 @@ Custom solution design
           </div><!-- End FAQ Item -->
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="faq-header">
+            <div class="faq-header" @click=${this.toggleFaq}>
               <span class="faq-number">02</span>
               <h4>What’s included in the free assessment?</h4>
               <div class="faq-toggle">
@@ -962,7 +970,7 @@ Custom solution design
 
           <!-- PRICING QUESTIONS -->
           <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-            <div class="faq-header">
+            <div class="faq-header" @click=${this.toggleFaq}>
               <span class="faq-number">03</span>
               <h4>How is monthly billing handled?</h4>
               <div class="faq-toggle">
@@ -978,7 +986,7 @@ Custom solution design
           </div><!-- End FAQ Item -->
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-            <div class="faq-header">
+            <div class="faq-header" @click=${this.toggleFaq}>
               <span class="faq-number">04</span>
               <h4>Can I upgrade/downgrade packages?</h4>
               <div class="faq-toggle">
@@ -995,7 +1003,7 @@ Custom solution design
 
           <!-- SERVICES QUESTIONS -->
           <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
-            <div class="faq-header">
+            <div class="faq-header" @click=${this.toggleFaq}>
               <span class="faq-number">05</span>
               <h4>What services are in Essential package?</h4>
               <div class="faq-toggle">
@@ -1011,7 +1019,7 @@ Custom solution design
           </div><!-- End FAQ Item -->
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-            <div class="faq-header">
+            <div class="faq-header" @click=${this.toggleFaq}>
               <span class="faq-number">06</span>
               <h4>Do you handle Lesotho-specific compliance?</h4>
               <div class="faq-toggle">
@@ -1027,7 +1035,7 @@ Custom solution design
           </div><!-- End FAQ Item -->
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="450">
-            <div class="faq-header">
+            <div class="faq-header" @click=${this.toggleFaq}>
               <span class="faq-number">07</span>
               <h4>What's your response time for urgent issues?</h4>
               <div class="faq-toggle">
@@ -1043,7 +1051,7 @@ Custom solution design
           </div><!-- End FAQ Item -->
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-            <div class="faq-header">
+            <div class="faq-header" @click=${this.toggleFaq}>
               <span class="faq-number">08</span>
               <h4>Do you serve international clients?</h4>
               <div class="faq-toggle">
